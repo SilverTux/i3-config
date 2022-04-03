@@ -205,7 +205,7 @@ smart_borders on
 exec --no-startup-id ~/Projects/display.sh
 
 # Set background
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/Night_lights_by_Alberto_Salvia_Novella.jpg
+exec --no-startup-id feh --bg-fill /usr/share/backgrounds/Milky_Way_by_Paulo_José_Oliveira_Amaro.jpg
 
 # Set keyboard to US
 exec --no-startup-id setxkbmap us

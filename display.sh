@@ -24,4 +24,7 @@ killall picom
 picom -b
 
 # Redraw background
-feh --bg-fill /usr/share/backgrounds/Night_lights_by_Alberto_Salvia_Novella.jpg
+feh --bg-fill /usr/share/backgrounds/Milky_Way_by_Paulo_José_Oliveira_Amaro.jpg
+
+xset -dpms
+xset s off
