@@ -8,9 +8,13 @@ set -euo pipefail
 # Otherwise you can use the nuclear option:
 killall -q polybar || true
 
-# Launch bar1
-echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
-polybar laptop --config=${HOME}/.config/polybar/config.ini 2>&1 | tee -a /tmp/polybar1.log & disown
-polybar monitor --config=${HOME}/.config/polybar/config.ini 2>&1 | tee -a /tmp/polybar2.log & disown
+MONITORS=($(xrandr --current | grep connected | grep -v disconnected | cut -d' ' -f1))
+
+# Launch bars
+for OUT in ${MONITORS[@]}
+do
+    echo "---" | tee -a "/tmp/polybar_${OUT}.log"
+    MONITOR=${OUT} polybar monitor --config=${HOME}/.config/polybar/config.ini 2>&1 | tee -a "/tmp/polybar_${OUT}.log" & disown
+done
 
 echo "Bars launched..."

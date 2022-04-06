@@ -10,7 +10,7 @@ echo "${MONITORS}"
 
 xrandr --auto
 
-for MONITOR in ${MONITORS}
+for MONITOR in ${MONITORS[@]}
 do
   if [ "${MONITOR}" != "eDP-1" ]
   then
