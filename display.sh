@@ -21,7 +21,7 @@ done
 
 # Restart compositing
 killall picom
-picom -b
+picom -b --experimental-backends
 
 # Redraw background
 feh --bg-fill /usr/share/backgrounds/Milky_Way_by_Paulo_José_Oliveira_Amaro.jpg

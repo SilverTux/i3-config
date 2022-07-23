@@ -195,7 +195,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # You can also use any non-zero value if you'd like to have a border
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 0
 
 # Set gaps and border
 gaps outer 10
@@ -207,7 +207,7 @@ smart_borders on
 exec --no-startup-id ~/Projects/display.sh
 
 # Set background
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/Milky_Way_by_Paulo_José_Oliveira_Amaro.jpg
+exec --no-startup-id feh --bg-fill /usr/share/backgrounds/Cielo_estrellado_by_Eduardo_Diez_Viñuela.jpg
 
 # Set keyboard to US
 exec --no-startup-id setxkbmap us
