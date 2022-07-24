@@ -204,7 +204,7 @@ smart_gaps on
 smart_borders on
 
 # Reinitialize displays
-exec --no-startup-id ~/Projects/display.sh
+exec --no-startup-id ~/Projects/i3-config/display.sh
 
 # Set background
 exec --no-startup-id feh --bg-fill /usr/share/backgrounds/Cielo_estrellado_by_Eduardo_Diez_Viñuela.jpg
